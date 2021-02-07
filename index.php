@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zedhio Pratama Zulzaq | System Analyst, Designer &amp; QA Manual Tester</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property="og:title" content="Zedhio Pratama Zulzaq">
+    <meta name="author" content="Zedhio Pratama Zulzaq">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="System Analyst, Designer &amp; QA Manual Tester">
+    <meta property="og:description" content="System Analyst, Designer &amp; QA Manual Tester">
+    <link rel="canonical" href="https://zedhio.github.io/">
+    <meta property="og:url" content="https://zedhio.github.io/">
+    <meta property="og:site_name" content="Zedhio Pratama Zulzaq">
+    <meta property="og:image" content="https://zedhio.github.io/img/logo/logo.png">
+    <link href="assets/img/logo/logo.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bdc906322.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand"><a class="navbar-item" href="/"><img src="assets/img/logo/logo_zpz.svg" alt="Zedhio Pratama Zulzaq | System Analyst, UI/UX & QA Manual Tester" height="48"></a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start"></div>
+          <!-- <div class="navbar-end"><a class="navbar-item" href="/mentorship.html">Mentorship</a> -->
+            <div class="navbar-item"><a class="button is-primary is-outlined is-rounded" href="/contact">Say Hello</a></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-white has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column">
+              <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">System Analyst, UI/UX &amp; QA Manual Tester</h1>
+              <h2 class="subtitle is-size-4-desktop">I am a system analyst, design with a minimalist look and do testing.</h2><img class="avatar" src="assets/img/avatar/avatar.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="container"><img class="is-bottom" src="assets/img/support/banner.svg"></div>
+      </div>
+    </section>
+    <section class="section is-medium is-primary has-text-centered is-long">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-three-fifths">
+            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Zedhio. Nice to meet you.</h1>
+            <h2 class="subtitle is-size-5-desktop">Since starting my journey as a teaching assistant, it support and freelance web developer for almost 1 year in 2018, I have done some work for the agency, and collaborated on startups with talented people to create digital products for both education and special consumer use of UMKM. Because that's what makes me learn new things.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section skills has-text-centered">
+      <div class="container is-narrow">
+        <div class="box">
+          <div class="content">
+            <div class="columns is-centered">
+              <div class="column">
+                <figure class="image"><img class="is-skill-icon" src="assets/img/support/analyze_icon.svg"></figure>
+                <h1 class="title is-size-4 is-spaced">System Analyst</h1>
+                <p>I do analysis, design, and implement systems.</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy analysis:</p>
+                <p>Minutes of Meeting, Function Specification Document, User Guide</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Analysis Tools:</p>
+                <ul>
+                  <li>Microsoft Word</li>
+                  <li>Microsoft Excel</li>
+                  <li>Microsoft Visio</li>
+                  <li>Google Drive</li>
+                  <li>Mockplus</li>
+                  <li>Pen & Paper</li>
+                </ul>
+              </div>
+              <div class="column">
+                <figure class="image"><img class="is-skill-icon" src="assets/img/support/design_icon.svg"></figure>
+                <h1 class="title is-size-4 is-spaced">UI/UX</h1>
+                <p>I value simple content structure, clean design patterns and thougful interactions.</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
+                <p>UX, UI, Web, Mobile, Apps</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
+                <ul>
+                  <li>Figma</li>
+                  <li>Adobe XD</li>
+                  <li>Adobe Photoshop</li>
+                  <li>Pen & Paper</li>
+                </ul>
+              </div>
+              <div class="column"> 
+                <figure class="image"><img class="is-skill-icon" src="assets/img/support/qa_icon.svg"></figure>
+                <h1 class="title is-size-4 is-spaced">QA Manual Tester</h1>
+                <p>I tested my device or emulator, created a test flow, and created a test result report.</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy testing:</p>
+                <p>Web, Mobile, Apps</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Report Tools:</p>
+                <ul>
+                  <li>Microsoft Excel</li>
+                  <li>Microsoft Powerpoint</li>
+                  <li>Microsoft Visio</li>
+                  <li>Pen & Paper</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section projects is-medium is-white has-text-centered">
+      <div class="container is-narrow">
+        <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">My Recent Work</h1>
+        <h2 class="subtitle is-size-5-desktop">Here are some projects I've been or worked on recently. Want to see more? <a href="mailto:zedhiopratama@gmail.com">Email me</a>.</h2>
+        
+        <div class="project-grid">  
+          <div class="columns is-multiline is-mobile">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/AFB.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Create a web company profile batamcatering of Al Fath Batam</h1><a class="button is-primary is-outlined is-rounded" href="https://batamcatering.com/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/ePelajar.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a QA for web and mobile app eClass of ePelajar.id</h1><a class="button is-primary is-outlined is-rounded" href="https://live.epelajar.id/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/Edustore.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a QA for web and mobile app edustore of BPMPK - KEMDIKBUD</h1><a class="button is-primary is-outlined is-rounded" href="https://backup-medukasi.kemdikbud.go.id/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/TolakAngin.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a QA for web and Data Entry Content of Tolak Angin - Sido Muncul</h1><a class="button is-primary is-outlined is-rounded" href="http://tolakangin.co.id/"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/Pintaru.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a QA for web and mobile app Pintaru</h1><a class="button is-primary is-outlined is-rounded" href="https://pintaru.com/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/SupermarketOnline.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a QA for web mobile app & data entry of Citra Siantan Pasar Swalayan & Dept. Store</h1><a class="button is-primary is-outlined is-rounded" href="http://supermarketonline.co.id/" target="_blank"><span>View Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/SidomunculStore.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform task as a QA for web and mobile app of Sido Muncul Store</h1><a class="button is-primary is-outlined is-rounded" href="https://sidomunculstore.com/"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/Q-Apps.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a System Analyst and Wireframe Design for build Q-Apps of GMF</h1><a class="button is-primary is-outlined is-rounded"><span>Undisclosure Link</span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/G-SMART.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a Build G-SMART Web App of Lecturer UST</h1><a class="button is-primary is-outlined is-rounded"><span>Shutdown</span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/STBC.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a build web app for company profile of SMK Taruna Bangsa Ciamis</h1><a class="button is-primary is-outlined is-rounded"><span>Shutdown</span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/Kecilin.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a System Analyst for build landing page of kecilin.id</h1><a class="button is-primary is-outlined is-rounded" href="https://kecilin.id/"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop"> 
+              <figure class="image is-3by2"><img class="project-thumb" src="assets/img/portfolio/SIPB.png">
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">Perform tasks as a System Analyst and build Inventory Web App for PT. SUS (Manufacture Glove).</h1><a class="button is-primary is-outlined is-rounded"><span>Shutdown</span></a>
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="columns is-centered">
+          <div class="column"><a class="button is-primary is-outlined is-rounded is-medium" href="https://dribbble.com/mattfarley"><span class="icon"><i class="fab fa-dribbble"></i></span><span>See more on Dribbble</span></a></div>
+        </div> -->
+
+      </div>
+    </section>
+    <section class="section clients is-medium is-white has-text-centered has-border-top">
+      <div class="container is-narrow">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 class="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">I’m proud to have collaborated with some awesome companies:</h1>
+          </div>
+        </div>
+        <div class="client-grid">
+          <div class="columns is-centered is-mobile">
+            <div class="column is-half-mobile is-2-tablet">
+              <figure class="image is-2by1"><img class="client-logo" src="assets/img/collaborated/sorho.png" style="height: 50px;"></figure>
+            </div>
+            <div class="column is-half-mobile is-2-tablet">
+              <figure class="image is-2by1"><img class="client-logo" src="assets/img/collaborated/majesthink.png" style="height: 50px;"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section is-medium is-primary has-text-centered is-long-ish">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-three-fifths">
+            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">My Partner Startup Projects</h1>
+            <h2 class="subtitle is-size-5-desktop">I decided to join several startups to have more knowledge and experience and it was a fun challenge to try to design and build my own.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section startups has-text-centered">
+      <div class="container is-narrow">
+        <div class="startup-grid">
+          <div class="columns is-multiline level">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop level-item">
+              <div class="box"><img class="logo" src="assets/img/partner/epelajar.png">
+                <p>Online learning platform that can be accessed for free.</p><br><a class="link has-text-primary button" style="border: none; padding: 0; height: 27px;" disabled=""><span class="icon"><i class="fal fa-tools"></i></span><span>In development</span></a>
+              </div>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop level-item">
+              <div class="box"><img class="logo" src="assets/img/partner/wesclic.png">
+                <p>Efficiency and effectiveness of theway business works by integrating with stakeholders in one business network.</p><a class="link has-text-primary button" style="border: none; padding: 0; height: 27px;" disabled=""><span class="icon"><i class="fal fa-tools"></i></span><span>In development</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="callout">
+          <div class="columns is-centered">
+            <div class="column">
+              <h1 class="title is-spaced">Interested in collaborating or investing?</h1>
+              <h2 class="subtitle is-size-5-desktop">I’m always open to discussing product design work or partnership opportunities.</h2><a class="button is-primary is-outlined is-rounded is-medium" href="/startup-inquiry">Start a conversation</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="section testimonials is-medium is-white has-text-centered has-border-top">
+      <div class="container is-narrow">
+        <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Testimonials</h1>
+        <h2 class="subtitle is-size-5-desktop">People I've worked with have said some nice things...</h2>
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <div class="testimonials-slider">                     
+              <input id="carousel-1" type="radio" name="carousel" checked="">
+              <input id="carousel-2" type="radio" name="carousel">
+              <input id="carousel-3" type="radio" name="carousel">
+              <div class="carousel-slides">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <div class="testimonial-block"><img class="avatar" src="assets/img/testimoni/arbi.jpg">
+                      <p class="quote">“Zedhio is very helpful for us regarding website design for the development of the website that I created.”</p>
+                      <h1 class="title is-size-5">Arbi Syarifudin</h1>
+                      <h2 class="subtitle is-size-6">Mentor & Front-End Developer, TeamTrainit</h2>
+                    </div>
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <div class="testimonial-block"><img class="avatar" src="img/avatars/alvin.png">
+                      <p class="quote">“Matt's a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work.”</p>
+                      <h1 class="title is-size-5">Arbi Syarifudin</h1>
+                      <h2 class="subtitle is-size-6">Mentor & Front-End Developer, TeamTrainit</h2>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="carousel-nav">
+                <label for="carousel-1"></label>
+                <!-- <label for="carousel-2"></label> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section call-to-action is-primary has-text-centered">
+      <div class="container is-narrow">
+        <div class="box">
+          <div class="columns level">
+            <div class="column level-item">
+              <h1 class="title">Start a project</h1>
+            </div>
+            <div class="column level-item">
+              <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+            </div>
+            <div class="column level-item"><a class="button is-primary is-outlined is-rounded is-medium" href="#">Let's do this</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section is-primary is-small has-text-centered">
+      <div class="container is-narrow"><a class="logo" href="/"><img src="assets/img/logo/logo.png" alt="Matt Farley | Designer, Front-end Developer &amp; Mentor" height="48"></a>
+        <div class="columns is-centered"> 
+          <div class="column is-one-third">
+            <h1 class="title is-size-4-touch">Living, learning, &amp; leveling up one day at a time.</h1>
+          </div>
+        </div>
+        <div class="social-icons">
+          <p class="field"><a class="button is-medium" href="https://www.linkedin.com/in/zedhio/" target="_blank"><span class="icon is-small"><i class="fab fa-linkedin-in fa-fw"></i></span></a><a class="button is-medium" href="https://github.com/zedhio/" target="_blank"><span class="icon is-small"><i class="fab fa-github fa-fw"></i></span></a><a class="button is-medium" href="mailto:zedhiopratama@gmail.com" target="_blank"><span class="icon is-small"><i class="far fa-envelope fa-fw"></i></span></a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main-min.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script src="https://usebasin.com/f/363b98eca5af/ahoy.js" async="" defer=""></script>
+  </body>
+</html>
