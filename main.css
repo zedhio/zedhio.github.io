@@ -3898,7 +3898,7 @@ a:hover { color: #141c3a; }
 
 .navbar.is-planner { border-bottom: 1px solid #E6ECF8; }
 
-.navbar.is-planner a.button { font-weight: 400; color: #7510F7; border-color: #fff; }
+.navbar.is-planner a.button { font-weight: 400; color: #FF9F67; border-color: #fff; }
 
 .navbar .navbar-brand a.navbar-item { background-color: transparent; }
 
@@ -3916,7 +3916,7 @@ a:hover { color: #141c3a; }
 
 .navbar .navbar-menu .navbar-item { font-size: 18px; font-weight: 300; color: #141c3a; }
 
-.navbar .navbar-menu .navbar-item:hover { color: #7510F7; background-color: transparent; }
+.navbar .navbar-menu .navbar-item:hover { color: #FF9F67; background-color: transparent; }
 
 .navbar .navbar-menu .navbar-item .navbar-link { color: #141c3a; }
 
