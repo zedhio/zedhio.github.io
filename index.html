@@ -461,7 +461,597 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>February 08, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 04, 2025</span></p>
+											</div>
+											<h3 class="title"><a href="#">Apa yang Dimaksud Defect Clustering?</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p>Defect Clustering adalah prinsip pengujian perangkat lunak yang menunjukkan bahwa sejumlah kecil modul atau fungsi dalam suatu aplikasi cenderung memiliki sebagian besar cacat. Konsep ini erat kaitannya dengan Prinsip Pareto (aturan 80/20), dimana sekitar 80% cacat ditemukan pada 20% modul.</p>
+												<p><b>Poin Penting</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Definisi</b>
+															<br>Konsentrasi sebagian besar cacat pada sejumlah kecil modul aplikasi.
+														</li>
+														<li>
+															<b>Alasan</b>
+															<br>Modul tertentu mungkin lebih kompleks, sering diubah, atau dirancang tidak memadai, sehingga meningkatkan kemungkinan cacat.
+														</li>
+														<li>
+															<b>Manfaat</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>Membantu memprioritaskan upaya pengujian pada area yang rawan cacat.</li>
+																	<li>Meningkatkan efisiensi proses pengujian dengan memfokuskan sumber daya secara efektif.</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Tantangan</b>
+															<br>Ketergantungan yang berlebihan pada pengelompokan kerusakan dapat menyebabkan pengabaian pada area yang kurang kritis, sehingga berpotensi menghilangkan kerusakan yang tersembunyi.
+														</li>
+													</ol>
+												</div>
+												<p><b>Contoh Real-time dengan Modul Pembayaran (e-Commerce Platform)</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Area Rawan Cacat</b>
+															<br>Modul seperti Integrasi Payment Gateway, Aplikasi Discount Code, atau Proses Refund mungkin memiliki lebih banyak cacat karena melibatkan beberapa integrasi pihak ketiga, perhitungan, dan alur kerja yang kompleks.
+														</li>
+														<li>
+															<b>Area Stabil</b>
+															<br>Bagian seperti FAQ atau Kebijakan Privasi cenderung tidak memiliki cacat karena bersifat statis dan jarang diperbarui.
+														</li>
+													</ol>
+												</div>
+												<p>Dengan mengidentifikasi modul yang rawan cacat seperti Payment Gateway, tim dapat mengalokasikan lebih banyak sumber daya untuk menguji skenario seperti beberapa metode pembayaran, konversi mata uang, atau menangani transaksi yang gagal, sehingga memastikan keandalan sistem.</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 04, 2025</span></p>
+											</div>
+											<h3 class="title"><a href="#">Meningkatkan Query dengan Nesting</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Apa itu Sub-query?</b>
+															<br>Sub-kueri adalah kueri SQL bersarang yang menghitung hasil antara untuk digunakan dalam kueri utama. Contoh:
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<p style="font-size: 13px;">SELECT name FROM employees WHERE department_id = (SELECT department_id FROM departments WHERE department_name = 'IT');</p>
+															</div>
+														</li>
+														<li>
+															<b>Apa yang dimaksud dengan Co-Related Sub-query?</b>
+															<br>Subkueri yang terkait bersama bergantung pada kueri luar, yang dijalankan untuk setiap baris secara dinamis berdasarkan konteksnya. Contoh:
+															<div class="quotebox" style="padding-left: 30px;">
+																<p style="font-size: 13px;">SELECT e1.name FROM employees e1 WHERE salary > (SELECT AVG(salary) FROM employees e2 WHERE e1.department_id = e2.department_id);</p>
+															</div>
+														</li>
+														<li>
+															<b>Perbedaan Utama</b>
+															<br>Subkueri tidak bergantung pada kueri luar, sedangkan subkueri terkait bergantung padanya, sehingga membuatnya lebih lambat untuk kumpulan data yang lebih besar.
+															<br>
+															<p>
+																<div class="quotebox" style="align-items: center;">
+																	<i><img src="keydifference.png" height="300" alt="" /></i>
+																</div>
+															</p>
+														</li>
+														<li>
+															<b>Jenis Sub-query</b>
+															<br>Mencakup sub-kueri satu baris, multi-baris, skalar, dan bersarang, menawarkan fleksibilitas untuk berbagai kebutuhan kueri.
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Single Row Sub-query</b>
+																		<br>Mengembalikan nilai tunggal untuk perbandingan.
+																	</li>
+																	<li>
+																		<b>Multi Row Sub-query</b>
+																		<br>Mengembalikan beberapa baris untuk dibandingkan dengan IN atau ANY.
+																	</li>
+																	<li>
+																		<b>Scalar Sub-query</b>
+																		<br>Mengembalikan nilai tunggal yang dapat digunakan dalam ekspresi.
+																	</li>
+																	<li>
+																		<b>Nested Sub-query</b>
+																		<br>Berisi beberapa tingkat sub-kueri.
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Use Cases yang Umum</b>
+															<br>Subkueri ideal untuk pemfilteran, perbandingan, dan agregasi, sementara subkueri yang terkait bersama unggul dalam penghitungan dinamis dan pemfilteran spesifik baris. Contoh:
+															<div class="quotebox" style="padding-left: 30px;">
+																<p style="font-size: 13px;">SELECT name FROM employees WHERE department_id = (SELECT department_id FROM departments WHERE department_name = 'IT');</p>
+															</div>
+														</li>
+														<li>
+															<b>Tips Kinerja</b>
+															<br>Gunakan indeks, sederhanakan nesting, dan ganti subkueri terkait dengan gabungan atau Common Table Expressions (CTE) untuk efisiensi yang lebih baik. Contoh:
+															<div class="quotebox" style="padding-left: 30px;">
+																<p style="font-size: 13px;">SELECT name FROM employees WHERE department_id IN (SELECT department_id FROM departments WHERE location_id = 1);</p>
+															</div>
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 04, 2025</span></p>
+											</div>
+											<h3 class="title"><a href="#">Istilah Utama API yang Perlu Kamu Ketahui!</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p>Merasa bingung dengan jargon API? Mari kita sederhanakan istilah API paling penting yang perlu kamu ketahui!</p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Endpoint</b>
+															<br>Endpoint adalah URL tempat API menerima atau mengirim data.
+															<br>Contoh: <b>https://api.example.com/weather</b>
+															<br>Ini adalah titik masuk untuk komunikasi antar sistem.
+														</li>
+														<li>
+															<b>Request and Response</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Request</b>
+																		<br>Data yang kamu kirim ke API (seperti meminta informasi).
+																		<br>Contoh: "GET /weather?city=London"
+																	</li>
+																	<li>
+																		<b>Response</b>
+																		<br>Data dikembalikan oleh API (seperti jawaban yang Anda terima).
+																		<br>Contoh: { "temperature":"25°C", "status":"Sunny" }
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>JSON (JavaScript Object Notation)</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>A lightweight format used to send and receive data.</li>
+																	<li>Easy for humans to read and for machines to process.</li>
+																</ol>
+															</div>
+															<br>Contoh:
+															<br>JSON
+															<br>{ "name":"Ali", "age": 30, "city":"Sana'a" }
+														</li>
+														<li>
+															<b>Authentication</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>Memastikan bahwa hanya pengguna yang berwenang yang dapat mengakses API.</li>
+																	<li>Method: API Key, Token, OAuth.</li>
+																	<li>Contoh: Menggunakan bearer token di request header untuk mengakses secure API.</li>
+																</ol>
+															</div>
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 28, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Pertanyaan Seputar RTM (Requirement Traceability Matrix)</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Apa itu RTM?</b>
+															<br>RTM adalah dokumen yang memetakan dan menelusuri kebutuhan pengguna dengan kasus uji untuk memastikan bahwa semua persyaratan tercakup dalam kasus uji.
+														</li>
+														<li>
+															<b>Mengapa RTM Penting?</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>Memastikan cakupan tes yang lengkap.</li>
+																	<li>Membantu mengidentifikasi persyaratan yang hilang.</li>
+																	<li>Melacak kemajuan pengujian.</li>
+																	<li>Mendukung analisis dampak jika terjadi perubahan persyaratan.</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Apa saja komponen RTM?</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>Requirement ID</li>
+																	<li>Requirement Description</li>
+																	<li>Test Case ID</li>
+																	<li>Test Case Description</li>
+																	<li>Status (Pass/Fail/Blocked)</li>
+																	<li>Defect ID (jika berlaku)</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Apa saja jenis Matriks Ketertelusuran?</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Forward Traceability</b>
+																		<br>Tautan persyaratan ke test case.
+																	</li>
+																	<li>
+																		<b>Backward Traceability</b>
+																		<br>Menghubungkan test case ke persyaratan.
+																	</li>
+																	<li>
+																		<b>Bi-directional Traceability</b>
+																		<br>Memastikan ketertelusuran ke depan dan ke belakang
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Bagaimana RTM dipersiapkan?</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>Kumpulkan semua persyaratan (misalnya, dari BRD, SRS).</li>
+																	<li>Buat tabel dengan kolom untuk persyaratan, kasus uji, dan detail terkait.</li>
+																	<li>Petakan kasus uji ke persyaratan masing-masing.</li>
+																	<li>Alat apa yang digunakan untuk memelihara RTM?</li>
+																</ol>
+															</div>
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 28, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Pertanyaan Seputar API Testing</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Apa itu API?</b>
+															<br>Suatu cara bagi sistem perangkat lunak untuk berbicara satu sama lain.
+														</li>
+														<li>
+															<b>Apa keuntungan dari pengujian API?</b>
+															<br>Temukan bug lebih cepat, uji tanpa antarmuka pengguna, rilis perangkat lunak lebih cepat.
+														</li>
+														<li>
+															<b>Jelaskan berbagai jenis pengujian API.</b>
+															<br>Functional (apakah berfungsi?), Performance (apakah cepat?), Security (apakah amankah?), dan banyak lagi.
+														</li>
+														<li>
+															<b>Apa saja protokol umum yang digunakan dalam pengujian API?</b>
+															<br>HTTP, REST, SOAP
+														</li>
+														<li>
+															<b>Apa perbedaan utama antara API dan Layanan Web?</b>
+															<br>Semua layanan web adalah API, namun tidak semua API adalah layanan web. Layanan web menggunakan protokol web tertentu.
+														</li>
+														<li>
+															<b>Apa perbedaan antara pengujian API dan pengujian Unit?</b>
+															<br>Pengujian API memeriksa sekelompok komponen, Pengujian unit memeriksa bagian-bagian individual.
+														</li>
+														<li>
+															<b>Apa saja komponen inti dari permintaan HTTP?</b>
+															<br>URL, metode (seperti GET atau POST), header, dan body.
+														</li>
+														<li>
+															<b>Apa sajakah metode HTTP yang umum dan kegunaannya?</b>
+															<br>GET (mengambil data), POST (mengirim data), PUT (memperbarui data), DELETE (menghapus data).
+														</li>
+														<li>
+															<b>Apa yang diberitahukan oleh kode status HTTP kepada Anda?</b>
+															<br>Jika permintaan berhasil atau tidak (misalnya 200 bagus, 404 berarti tidak ditemukan).
+														</li>
+														<li>
+															<b>Apa pentingnya keadaan tanpa kewarganegaraan dalam arsitektur API?</b>
+															<br>Setiap permintaan memiliki semua informasi yang dibutuhkan, sehingga membuat API lebih andal.
+														</li>
+														<li>
+															<b>Apa saja gaya arsitektur untuk membuat Web API?</b>
+															<br>REST, SOAP, GraphQL
+														</li>
+														<li>
+															<b>Bandingkan perbedaan antara REST, SOAP, dan GraphQL.</b>
+															<br>REST menggunakan sumber daya, SOAP menggunakan XML, GraphQL memungkinkan Anda meminta data spesifik.
+														</li>
+														<li>
+															<b>Apa prinsip desain API yang baik?</b>
+															<br>Konsisten, mudah digunakan, terdokumentasi dengan baik, aman.
+														</li>
+														<li>
+															<b>Apa sajakah alat pengujian API yang umum?</b>
+															<br>Postman, REST Assured, SoapUI
+														</li>
+														<li>
+															<b>Jelaskan langkah-langkah yang terlibat dalam pengujian API.</b>
+															<br>Merencanakan, merancang pengujian, menyiapkan, menjalankan pengujian, melaporkan hasil.
+														</li>
+														<li>
+															<b>Bagaimana Anda melakukan Pengujian Beban API?</b>
+															<br>Simulasikan banyak pengguna yang menggunakan API secara bersamaan.
+														</li>
+														<li>
+															<b>Apa itu contract testing?</b>
+															<br>Memastikan layanan yang berbeda berkomunikasi satu sama lain dengan benar.
+														</li>
+														<li>
+															<b>Apa itu fuzz testing?</b>
+															<br>Mengirim data aneh ke API untuk melihat apakah data tersebut rusak.
+														</li>
+														<li>
+															<b>Bagaimana pendekatan Anda dalam menguji API yang memiliki mekanisme autentikasi dan otorisasi yang kompleks?</b>
+															<br>Uji secara menyeluruh berbagai peran dan izin pengguna.
+														</li>
+														<li>
+															<b>Bagaimana Anda menguji API yang belum sepenuhnya dikembangkan?</b>
+															<br>Gunakan API tiruan atau stub untuk menyimulasikan bagian yang hilang.
+														</li>
+														<li>
+															<b>Bagaimana cara kami menguji keamanan API?</b>
+															<br>Uji autentikasi, otorisasi, validasi input, dan pindai kerentanan.
+														</li>
+														<li>
+															<b>Apa sajakah kerentanan keamanan API yang umum?</b>
+															<br>Serangan injeksi, otentikasi buruk, kebocoran data sensitif.
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 28, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Metrik dan Wawasan Utama untuk Para SQA</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Defect Metrics</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Defect Density</b>
+																		<br>Jumlah cacat per modul atau fitur, membantu memprioritaskan area yang memerlukan perhatian.
+																	</li>
+																	<li>
+																		<b>Defect Leakage</b>
+																		<br>Cacat yang ditemukan dalam produksi setelah pengujian, merupakan indikator utama dari cakupan yang terlewat.
+																	</li>
+																	<li>
+																		<b>Defect Removal Efficiency (DRE)</b>
+																		<br>Persentase cacat yang dihilangkan selama pengujian versus cacat yang ditemukan setelah rilis.
+																	</li>
+																	<li>
+																		<b>Insight</b>
+																		<br>DRE yang lebih tinggi menunjukkan pengujian yang efektif; targetkan di atas 90%.
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Test Coverage Metrics</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Requirements Coverage</b>
+																		<br>Persentase persyaratan yang dicakup oleh kasus uji.
+																	</li>
+																	<li>
+																		<b>Code Coverage</b>
+																		<br>Persentase basis kode yang dieksekusi selama pengujian (misalnya, cakupan unit, fungsional, dan cabang).
+																	</li>
+																	<li>
+																		<b>Insight</b>
+																		<br>Cakupan yang tinggi memastikan lebih sedikit kesenjangan dalam pengujian dan mengurangi kemungkinan bug yang tidak terdeteksi.
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Automation Metrics</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Automation Coverage</b>
+																		<br>Persentase kasus uji yang diotomatisasi dibandingkan dengan total kasus uji.
+																	</li>
+																	<li>
+																		<b>Execution Time Savings</b>
+																		<br>Penghematan waktu menggunakan otomatisasi dibandingkan dengan pengujian manual.
+																	</li>
+																	<li>
+																		<b>Pass/Fail Rate</b>
+																		<br>Rasio test case yang berhasil dan gagal dalam rangkaian otomatis.
+																	</li>
+																	<li>
+																		<b>Insight</b>
+																		<br>ROI otomatisasi yang tinggi berarti rilis yang lebih cepat dan efisiensi biaya.
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Performance Metrics</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Response Time</b>
+																		<br>Waktu yang dibutuhkan sistem untuk merespons permintaan pada beban berbeda.
+																	</li>
+																	<li>
+																		<b>Throughput</b>
+																		<br>Jumlah transaksi yang diproses per detik.
+																	</li>
+																	<li>
+																		<b>Error Rate</b>
+																		<br>Frekuensi kesalahan yang terjadi selama pengujian kinerja.
+																	</li>
+																	<li>
+																		<b>Insight</b>
+																		<br>Tingkat kesalahan yang rendah dan waktu respons yang optimal sangat penting untuk kepuasan pengguna.
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Testing Productivity Metrics</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Test Case Productivity</b>
+																		<br>Jumlah kasus uji yang dieksekusi per hari.
+																	</li>
+																	<li>
+																		<b>Defects per Tester</b>
+																		<br>Jumlah cacat yang teridentifikasi per penguji, yang menunjukkan kontribusi individu.
+																	</li>
+																	<li>
+																		<b>Insight</b>
+																		<br>Peningkatan produktivitas mencerminkan proses yang disederhanakan dan pemanfaatan sumber daya yang efektif.
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Customer Satisfaction Metrics</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>Customer Reported Defects</b>
+																		<br>Jumlah masalah yang dilaporkan oleh pengguna pasca penerapan.
+																	</li>
+																	<li>
+																		<b>Net Promoter Score (NPS)</b>
+																		<br>Mengukur kepuasan pengguna dan kemungkinan merekomendasikan produk.
+																	</li>
+																	<li>
+																		<b>Insight</b>
+																		<br>Lebih sedikit cacat yang dilaporkan dan NPS yang lebih tinggi menandakan produk yang andal dan ramah pengguna.
+																	</li>
+																</ol>
+															</div>
+														</li>
+														<li>
+															<b>Project Metrics</b>
+															<br>
+															<div class="quotebox" style="padding-left: 30px;">
+																<ol type="a">
+																	<li>
+																		<b>On-Time Delivery</b>
+																		<br>Persentase pencapaian pengujian yang dicapai sesuai jadwal.
+																	</li>
+																	<li>
+																		<b>Test Budget Adherence</b>
+																		<br>Biaya yang dikeluarkan versus anggaran yang dialokasikan untuk kegiatan pengujian.
+																	</li>
+																	<li>
+																		<b>Insight</b>
+																		<br>Manajemen sumber daya yang efisien menjaga pengujian tetap dalam cakupan dan tenggat waktu.
+																	</li>
+																</ol>
+															</div>
+														</li>
+													</ol>
+												</div>
+												<p><b>Kesimpulan</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>Ubah Wawasan menjadi Tindakan</li>
+														<li>Pantau metrik secara teratur untuk mengidentifikasi tren dan mengoptimalkan proses.</li>
+														<li>Gunakan kebocoran cacat dan DRE untuk meningkatkan cakupan pengujian.</li>
+														<li>Manfaatkan metrik otomatisasi untuk menyeimbangkan upaya manual dan otomatis secara efektif.</li>
+														<li>Analisis metrik kinerja untuk memastikan skalabilitas dan stabilitas dalam kondisi dunia nyata.</li>
+														<li>Ini akan membantu tim kamu untuk memberikan solusi perangkat lunak berkualitas tinggi, hemat biaya, dan berpusat pada pengguna.</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 21, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Kepanjangan dari T.E.S.T.I.N.G</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -511,7 +1101,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>February 08, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 21, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Tanggung jawab Spesialis QA</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -558,7 +1148,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>February 08, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 21, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Perbedaan Utama QA di Startup vs Perusahaan</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -645,7 +1235,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>February 08, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 14, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Memahami Kualitas Produk dalam Pengembangan Perangkat Lunak</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -688,7 +1278,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>February 08, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 14, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Proses QA dalam Pengembangan Perangkat Lunak</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -738,7 +1328,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>February 01, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 14, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Menangani Bug di Production/Live Environment</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -817,7 +1407,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>February 01, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 07, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Mengapa Acceptance Criteria (AC) Penting dalam QA</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -861,7 +1451,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 25, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 07, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Memahami User Acceptance Testing (UAT)</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -950,7 +1540,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 25, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 07, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Memahami Functional Testing</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1036,7 +1626,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 25, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 30, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Memahami HTTP Request Methods</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1099,7 +1689,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 18, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 30, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">UI & API Test Case</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1164,7 +1754,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 18, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 30, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Perintah SQL Sederhana</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1217,7 +1807,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 18, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 23, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Hubungan antara Epic, User Story, dan Task pada Agile Model</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1302,7 +1892,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 11, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 23, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Pentingnya melakukan Smoke Testing</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1328,7 +1918,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 11, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 23, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Pentingnya melakukan Regression Testing</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1372,7 +1962,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 11, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 23, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Bug yang Umum Ditemukan Selama Pengujian API</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1425,7 +2015,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 04, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 16, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Basics of QA Manual</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1578,7 +2168,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 04, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 16, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Membuat Test Cases Secara Efektif</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1650,7 +2240,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>January 04, 2025</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 16, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Membuat Bug Ticket Secara Efektif</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1722,7 +2312,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 28, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 09, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Mitos Umum Tentang Pengujian Perangkat Lunak yang Harus Tester Ketahui!</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1764,7 +2354,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 28, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 09, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Memahami Bug Life Cycle</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1833,7 +2423,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 28, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 09, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Pengenalan Jira (Project Management)</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -1914,7 +2504,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 21, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 02, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Tips untuk Tester</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2016,7 +2606,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 21, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 02, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">9 Jenis Pengujian API yang Harus Tester Ketahui</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2078,7 +2668,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 21, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 02, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Mengidentifikasi Area yang Terkena Dampak Pengujian Regresi</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2122,7 +2712,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 14, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 26, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Memahami respons API sebagai Tester</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2165,7 +2755,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 14, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 26, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Jenis Software Testing</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2255,7 +2845,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 14, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 26, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Seberapa Sering Smoke dan Sanity Testing Harus Dilakukan?</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2292,7 +2882,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 07, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 19, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Penjelasan Metode Otentikasi REST API</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2355,7 +2945,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 07, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 19, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Perbedaan Smoke dan Sanity Testing</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2378,7 +2968,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>December 07, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 19, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Pentingnya Dokumentasi Hasil Diskusi Rapat</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2431,7 +3021,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 30, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 19, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Apa itu Acceptance Testing dan Jenisnya?</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2487,7 +3077,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 30, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 12, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#"><i>Severity</i> dan <i>Priority</i> dalam Pengujian Perangkat Lunak</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2572,7 +3162,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 30, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 12, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Apakah jadi QA itu menyenangkan?</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2606,7 +3196,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 23, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 12, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Perbedaan Quality Assurance dan Quality Control</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2631,7 +3221,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 23, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 05, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">7 Prinsip Pengujian</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2660,7 +3250,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 23, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 05, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Mengenal Lebih Jauh Tentang Software Quality Assurance</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2709,7 +3299,7 @@
 									<div class="list_inner">
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 16, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>October 05, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Manual Testing vs Automated Testing</a></h3>
 											<div class="tokyo_tm_read_more">
@@ -2777,7 +3367,7 @@
 										<div class="list_inner">
 											<div class="details">
 												<div class="short">
-													<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 16, 2024</span></p>
+													<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>September 28, 2024</span></p>
 												</div>
 												<h3 class="title"><a href="#">Perbedaan <i><b>Bug, Defect, dan Error</b></i></a></h3>
 												<div class="tokyo_tm_read_more">
@@ -2818,7 +3408,7 @@
 										</div> -->
 										<div class="details">
 											<div class="short">
-												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>November 16, 2024</span></p>
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>September 28, 2024</span></p>
 											</div>
 											<h3 class="title"><a href="#">Cara Membuat <i><b>Test Plan</b></i></a></h3>
 											<div class="tokyo_tm_read_more">
