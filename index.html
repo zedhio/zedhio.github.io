@@ -890,6 +890,8 @@
 																	<li>
 																		<b>Defect Leakage</b>
 																		<br>Cacat yang ditemukan dalam produksi setelah pengujian, merupakan indikator utama dari cakupan yang terlewat.
+																		<br><br>Formula:
+																		<br>Defect Leakage = (Defect yang dilaporkan di production oleh end user) / (Total defects yang ditemukaan saat testing + Production)
 																	</li>
 																	<li>
 																		<b>Defect Removal Efficiency (DRE)</b>
@@ -3881,6 +3883,11 @@
 														</li>
 													</ol>
 												</div>
+												<p>
+													<div class="quotebox">
+														<i><img src="scrum.gif" height="600" alt="" /></i>
+													</div>
+												</p>
 											</div>
 										</div>
 									</div>
@@ -5139,6 +5146,354 @@
 															<br>Gunakan metrik Agile seperti velocity, cycle time, dan tingkat kerusakan untuk mengidentifikasi bottleneck dan meningkatkan proses secara terus-menerus.
 															<br><br>
 															Agility = Speed + Quality + Continuous Improvement. Tetap fokus pada pelanggan, dan hasilnya akan mengikuti!
+														</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>August 17, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Cara Menentukan Estimasi Story Point Pada Tiket Task</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p><b>Apa yang dimaksud dengan estimasi story point?</b></p>
+												<p>Estimasi Story Point adalah teknik penting yang digunakan untuk mengukur kompleksitas tugas—atau "cerita"—sebelum tim mulai bekerja. Berbeda dengan metode estimasi tradisional yang mengandalkan waktu (seperti jam atau hari), story point menilai pekerjaan berdasarkan keseluruhan upaya dan kompleksitas yang terlibat, serta potensi hambatan.</p>
+												<p><b>Gimana cara melakukannya?</b></p>
+												<p>Berikut panduan langkah demi langkah yang disederhanakan tentang cara melakukan estimasi poin cerita:</p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Build a Baseline</b>
+															<br>Mulailah dengan memilih beberapa user story sebagai referensi. Tetapkan masing-masing nilai story point yang mencerminkan kompleksitas relatif terhadap yang lain. Skala yang umum digunakan adalah deret Fibonacci (1, 2, 3, 5, 8, 13, dst), atau bahkan pengelompokan sederhana seperti Kecil, Sedang, dan Besar.
+														</li>
+														<li>
+															<b>Team Consensus</b>
+															<br>Seluruh tim harus berpartisipasi dalam estimasi untuk memanfaatkan perspektif yang beragam. Teknik seperti Planning Poker mendorong semua anggota untuk berkontribusi dengan meminta setiap orang memilih kartu yang mewakili perkiraan mereka, kemudian mendiskusikan alasan di balik pilihan mereka hingga tercapai konsensus.
+														</li>
+														<li>
+															<b>Refinement and Reassessment</b>
+															<br>Ketika tim menjadi lebih berpengalaman dan cerita-cerita baru ditambahkan, penting untuk secara teratur menyempurnakan perkiraan dan menilai kembali keputusan-keputusan sebelumnya untuk memastikan konsistensi dan akurasi.
+														</li>
+													</ol>
+												</div>
+												<p><b>Contoh Praktik dengan Membayangkan tim-mu memiliki tiga user story:</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>A: Tambahkan fitur login.</li>
+														<li>B: Mengintegrasikan payment gateway dengan pihak ketiga.</li>
+														<li>C: Buat dasbor untuk menampilkan analisis pengguna.</li>
+													</ol>
+												</div>
+												<p>Dengan asumsi cerita A adalah yang paling sederhana dan diberi 2 poin, cerita B mungkin jauh lebih kompleks karena masalah keamanan dan ketergantungan eksternal, sehingga diberi 8 poin. Cerita C, yang memerlukan logika backend dan tampilan frontend, diberi nilai 5 poin karena lebih kompleks daripada A tetapi lebih sederhana dari B.</p>
+												<p>Metode ini tidak hanya mengukur tugas namun juga memicu diskusi tentang potensi tantangan, membantu tim mengantisipasi hambatan dan mendistribusikan beban kerja dengan lebih efektif.</p>
+												<p>
+													<div class="quotebox">
+														<i><img src="storypoint.png" height="300" alt="" /></i>
+													</div>
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>August 17, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Menyeimbangkan Pengujian dan Timeline yang Terbatas</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p><b>Skenario</b></p>
+												<p>Saya merupakan QA Lead untuk aplikasi web berskala besar yang memiliki beberapa layanan mikro yang terintegrasi ke dalamnya. Aplikasi ini sering diperbarui, dan terus ada aliran fitur baru, perbaikan bug, dan pengoptimalan. Salah satu layanan mikro inti (katakanlah) yang menangani otentikasi pengguna telah diperbarui, dan saya melihat perubahan signifikan dalam waktu respons saat mengujinya di staging environment.</p>
+												<p>Sebagai QA Lead, saya perlu memastikan bahwa pembaruan baru tidak berdampak negatif terhadap pengalaman pengguna dan kinerja sistem secara keseluruhan. Namun, tim produk menekan untuk merilisnya lebih cepat karena pembaruan tersebut untuk mengatasi kerentanan keamanan yang kritis. Batas waktu peluncurannya semakin dekat, dan waktu untuk pengujian mendalam terbatas. Saya juga memiliki beberapa junior dan middle tester di tim QA yang memiliki pengalaman terbatas dalam pengujian kinerja.</p>
+												<p><b>Pertanyaan</b></p>
+												<p>Pendekatan seperti apa yang harus saya lakukan untuk pengujian authentication microservice untuk menyeimbangkan pengujian menyeluruh dan memenuhi tenggat waktu yang ketat?</p>
+												<p><b>Pendekatan versi Saya</b></p>
+												<p>Pertama, saya akan memprioritaskan pengujian berbasis risiko, dengan fokus pada fungsi penting dari authentication microservice, seperti login, registrasi, dan manajemen sesi. Area-area ini penting untuk pengalaman pengguna, jadi saya akan mengujinya secara menyeluruh untuk memastikan tidak ada yang rusak akibat perubahan terkini.</p>
+												<p>Karena performance adalah perhatian utama di sini, saya akan menjalankan tperformance test secara cepat menggunakan alat seperti JMeter untuk menilai waktu respons dan memastikan pembaruan tidak menyebabkan penurunan yang signifikan. Performance test secara penuh mungkin tidak dapat dilakukan karena keterbatasan waktu, namun pemeriksaan dasar akan membantu menandai masalah besar sejak dini.</p>
+												<p>Selanjutnya, saya akan memanfaatkan regression testing yang ada untuk memvalidasi dengan cepat bahwa area lain dalam aplikasi tidak terkena dampak negatif dari perubahan tersebut.</p>
+												<p>Kolaborasi dengan tim pengembang adalah kunci. Saya berkomunikasi dengan mereka untuk memahami perubahan spesifik yang dilakukan pada authentication microservice, sehingga saya dapat memfokuskan upaya pengujian pada area yang terkena dampak dan menghindari pengujian berlebihan pada fitur stabil.</p>
+												<p>Dengan junior tester yang ada di tim, saya akan menugaskan mereka berdasarkan yang ditargetkan seperti menguji alur login dan manajemen sesi.</p>
+												<p>Mengingat keterbatasan waktu, saya akan melakukan smoke dan sanity testing pada proses autentikasi untuk memverifikasi bahwa fungsi dasar seperti login dan penanganan sesi berfungsi dengan benar.</p>
+												<p>Terakhir, saya akan terus memberikan informasi terkini kepada atasan mengenai kemajuan pengujian dengan membagikan laporan, menyoroti area mana pun yang pengujiannya terbatas. Saya akan memastikan untuk mengkomunikasikan risikonya dan memberikan penilaian yang jelas sehingga mereka dapat membuat keputusan yang tepat mengenai rilis tersebut.</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>August 17, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Memastikan kolaborasi yang efektif antara Developer dan QA</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p>Dalam dunia software development, ada dua pemikiran penting yang bertabrakan: Developer dan QA/Tester. Meskipun developer berfokus pada pembuatan solusi inovatif dan QA memastikan solusi tersebut bekerja dengan sempurna.</p>
+												<p><b>Pola Pikir Developer</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>Berfokus pada fungsionalitas dan fitur.</li>
+														<li>Didorong oleh kreativitas dan pemecahan masalah.</li>
+														<li>Selalu mencari cara baru untuk meningkatkan performance.</li>
+													</ol>
+												</div>
+												<p><b>Pola Pikir QA/Tester</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>Berfokus pada kualitas dan keandalan.</li>
+														<li>Didorong oleh perhatian terhadap detail dan pemikiran analitis.</li>
+														<li>Selalu bertanya “Bagaimana jika?” dan "Bagaimana ini bisa pecah?"</li>
+													</ol>
+												</div>
+												<p><b>Pahlawan Tanpa Tanda Jasa: QA/Tester</b></p>
+												<p>Tester memainkan peran penting dalam keberhasilan pengiriman namun sering kali tidak dihargai. Padahal tester bekerja untuk:</p>
+												<div class="quotebox">
+													<ol>
+														<li>Mengidentifikasi critical bug dan defect.</li>
+														<li>Memastikan kompatibilitas dan kegunaan.</li>
+														<li>Memvalidasi kinerja di bawah tekanan.</li>
+														<li>Memberikan umpan balik yang dapat ditindaklanjuti untuk perbaikan.</li>
+													</ol>
+												</div>
+												<p><b>Mengapa QA/Tester itu Penting?</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Quality Assurance</b>
+															<br>Tester menjamin produk memenuhi standar.
+														</li>
+														<li>
+															<b>Mengurangi Risiko</b>
+															<br>Tester mengidentifikasi potensi masalah sebelum rilis.
+														</li>
+														<li>
+															<b>User Experience</b>
+															<br>Tester memastikan interaksi yang lancar.
+														</li>
+														<li>
+															<b>Penghematan Biaya</b>
+															<br>Tester mencegah pengerjaan ulang dan pemeliharaan yang mahal.
+														</li>
+													</ol>
+												</div>
+												<p><b>Menjembatani Kesenjangan: Kolaborasi adalah Kuncinya</b></p>
+												<p>Untuk menghadirkan aplikasi yang luar biasa, developer dan tester harus bekerja sama:</p>
+												<div class="quotebox">
+													<ol>
+														<li>Komunikasikan requirement dan ekspektasi.</li>
+														<li>Berbagi pengetahuan dan keahlian.</li>
+														<li>Menumbuhkan budaya saling menghormati.</li>
+													</ol>
+												</div>
+												<p><b>Hargai QA/Tester-mu!</b></p>
+												<p>Lain kali jika kamu melihat seorang tester, ucapkan terima kasih atas upaya mereka yang tak kenal lelah. Dedikasi mereka memastikan produk-mu bersinar!</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>August 10, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Seberapa Berguna Dashboard Jira untuk Tracking Bug</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p>Dashboard Jira dibuat untuk mempermudah tracking bug dalam tim development. Dashboard ini tidak hanya membantu memvisualisasikan status bug, namun juga membuat diskusi dengan product team dan developer agar jadi lebih fokus dan efisien.</p>
+												<p><b>Kenapa dashboard ini berguna?</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Mudah untuk melihat status bug</b>
+															<br>Jadi semua orang mengetahui mana yang urgent maupun yang sudah selesai.
+														</li>
+														<li>
+															<b>Tracking jadi lebih mudah</b>
+															<br>Tidak perlu bolak-balik mencari info, semua ada di satu tempat.
+														</li>
+														<li>
+															<b>Kualitas produk lebih terukur</b>
+															<br>Membuat tim lebih aware pada area mana yang perlu ditingkatkan.
+														</li>
+													</ol>
+												</div>
+												<p><b>Apa yang saya perlu tampilkan dashboard jira?</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>Jumlah bug yang belum resolved di production dan staging.</li>
+														<li>Data yang dikelompokkan berdasarkan environment, severity, dan platform.</li>
+														<li>Daftar lengkap semua bug, sehingga lebih mudah dilacak statusnya.</li>
+													</ol>
+												</div>
+												<p><b>Apa manfaatnya?</b></p>
+												<p>Dashboard ini membantu kami memahami prioritas pekerjaan, mempercepat perbaikan bug, dan memberikan gambaran jelas tentang kualitas produk kami.</p>
+												<p>
+													<div class="quotebox">
+														<i><img src="dashboardbugtracking.png" height="400" alt="" /></i>
+													</div>
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>August 10, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Memahami Kunci Peran Pada Software Testing</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p><b>SDET</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Software Development Engineer in Test</b>
+															<br>𝗦𝗗𝗘𝗧 terampil dalam pengembangan dan pengujian. Mereka menulis skrip pengujian otomatis, mengembangkan kerangka pengujian, dan sering kali berupaya membuat alat yang meningkatkan proses pengujian. Mereka juga terlibat dalam penulisan unit test, integration test, dan performance test.
+														</li>
+														<li>
+															<b>Kontribusi</b>
+															<br>𝗦𝗗𝗘𝗧 menjembatani kesenjangan antara developer dan tester dengan mengotomatiskan tugas yang berulang, memungkinkan putaran umpan balik yang lebih cepat, dan memastikan software memenuhi standar fungsional dan performa.
+														</li>
+													</ol>
+												</div>
+												<p><b>QE</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Quality Engineer</b>
+															<br>Quality Engineer fokus pada proses kualitas di seluruh software development lifecycle. Mereka bertanggung jawab untuk menentukan standar kualitas, memantau metrik, dan memastikan bahwa kualitas dipertahankan secara menyeluruh. Mereka sering kali melihat pengujian secara holistik dan menggabungkan strategi manual dan otomatis.
+														</li>
+														<li>
+															<b>Kontribusi</b>
+															<br>QE berfungsi untuk memastikan bahwa kualitas “dimasukkan” ke dalam proses pengembangan dan bukan sekadar diuji di akhir. Dengan menyiapkan proses yang tepat, mereka membantu mencegah kerusakan sejak dini, meningkatkan kolaborasi antar tim, dan mempertahankan standar tinggi untuk kualitas produk secara keseluruhan.
+														</li>
+													</ol>
+												</div>
+												<p><b>TE</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Test Engineer</b>
+															<br>Test Engineer terlibat dalam pelaksanaan pengujian baik manual maupun otomatis untuk menemukan bug. Mereka fokus untuk memastikan bahwa produk memenuhi persyaratan yang ditentukan. Mereka merancang dan melaksanakan test case, mendokumentasikan kerusakan, dan memverifikasi perbaikan.
+														</li>
+														<li>
+															<b>Kontribusi</b>
+															<br>TE memainkan peran penting dalam menemukan defect sebelum dirilis. Dengan menjalankan test case yang dirancang dengan baik, mereka memvalidasi fungsionalitas, kegunaan, dan stabilitas produk, membantu memastikan bahwa produk tersebut memenuhi harapan pengguna.
+														</li>
+													</ol>
+												</div>
+												<p><b>QA</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Quality Assurance</b>
+															<br>Quality Assurance profesional berfokus pada manajemen kualitas keseluruhan proses software. Peran mereka meliputi audit proses, menetapkan tolok ukur kualitas, dan memastikan kepatuhan terhadap standar. QA seringkali lebih fokus pada proses dan mengawasi penerapan praktik terbaik.
+														</li>
+														<li>
+															<b>Kontribusi</b>
+															<br>QA memastikan konsistensi dalam kualitas dengan menetapkan dan memelihara proses kualitas. Mereka membantu mengurangi kesalahan dan inefisiensi dengan menerapkan praktik terbaik di seluruh tim, sehingga membantu meminimalkan risiko dan menjaga keandalan produk.
+														</li>
+													</ol>
+												</div>
+												<p><b>Secara Ringkas</b></p>
+												<div class="quotebox">
+													<ol>
+														<li>𝗦𝗗𝗘𝗧 fokus pada otomatisasi dan dukungan pengembangan dalam pengujian.</li>
+														<li>𝗤𝗘 memastikan kualitas terintegrasi di seluruh proses pengembangan.</li>
+														<li>𝗧𝗘 bertanggung jawab atas pelaksanaan pengujian manual dan otomatis.</li>
+														<li>𝗤𝗔 profesional fokus pada pengelolaan dan optimalisasi proses kualitas.</li>
+													</ol>
+												</div>
+												<p>Setiap peran memainkan peran unik dalam menciptakan perangkat lunak berkualitas tinggi, mulai dari menulis pengujian otomatis hingga memastikan standar kualitas yang kuat di development lifecycle.</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list_inner">
+										<div class="details">
+											<div class="short">
+												<p class="date">By <a href="#">Zedhio Pratama Zulzaq</a> <span>August 10, 2024</span></p>
+											</div>
+											<h3 class="title"><a href="#">Extension Chrome yang Wajib QA Gunakan</a></h3>
+											<div class="tokyo_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<div class="quotebox">
+													<ol>
+														<li>
+															<b>Nimbus Screenshoot & Record</b>
+															<br>Membantu melakukan screenchot dan screen recording.
+														</li>
+														<li>
+															<b>Fake Filler</b>
+															<br>Kita tidak perlu mengisi form satu persatu dengan cara manual. Fake filler dapat melakukan pengisian secara otomatis ke semua form, per form, dan per input. Selain itu fake filler juga dapat membedakan inputan mana untuk email, nama, nomor hp, dsb.
+														</li>
+														<li>
+															<b>SelectorsHub</b>
+															<br>SelectorsHub dapat membantu tester untuk memverifikasi XPath, CSS Selector, Playwright Selector, Jquery, dan JS path.
+														</li>
+														<li>
+															<b>WAVE Evaluation Tool</b>
+															<br>Ekstensi ini dapat memberikan feedback terkait accessibility dari website. 
+														</li>
+														<li>
+															<b>Bug Magnet</b>
+															<br>Dapat membantu menginput berbagai karakter bahkan hingga inputan SQL dan SQL Injection.
+														</li>
+														<li>
+															<b>Check My Links</b>
+															<br>Agar menghindari UX yang buruk, QA perlu memeriksa tautan yang ada dalam setiap konten. Ekstensi ini dapat memverifikasi apakah tautan dalam konten aktif atau tidak. Dengan cara ini, pengujian akan berjalan lebih cepat dan efektif.
+														</li>
+														<li>
+															<b>History & Chace Cleaner - Smart Clean</b>
+															<br>Ekstensi ini dapat membantu membersihkan browser dengan lebih cepat dan membantu menghapus semua jejak aktivitas online.
+														</li>
+														<li>
+															<b>Exploratory Testing Chrome Extenxion</b>
+															<br>Ekstensi ini dapat membatu QA membuat exploratory testing website jadi lebih mudah dan efisien. Selain itu dapat melaporkan bug, ide, dan catatan. Serta mengambil screenshoot selama sesi.
+														</li>
+														<li>
+															<b>Page Load Time</b>
+															<br>Ekstensi ini dapat membantu memberikan informasi yang tepat tentang waktu yang dibutuhkan untuk akses suatu halaman.
+														</li>
+														<li>
+															<b>Ghostery - Privacy Ad Blocker</b>
+															<br>Ekstensi ini berguna untuk memblokir iklan dan bermanfaat menjamin keamanan privasi dengan memblokir pelacak dan juga iklan yang berbahaya.
 														</li>
 													</ol>
 												</div>
